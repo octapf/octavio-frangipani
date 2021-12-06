@@ -294,7 +294,12 @@ ul {
 }
 @media screen and (max-width: 37.5em) {
 	.logo {
-		text-align: center;
+		display: inline;
+		padding: 2rem 0;
+		font-weight: 100;
+		font-size: 2rem;
+		letter-spacing: 0.1em;
+		color: var(--header-title-color);
 	}
 
 	.ul-flex {
