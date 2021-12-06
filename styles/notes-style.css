@@ -70,3 +70,24 @@ code {
 .four-cols {
 	grid-column: span 4;
 }
+
+@media screen and (max-width: 37.5em) {
+	.container-grid-notes {
+		color: var(--header-text-color);
+		display: grid;
+		grid-auto-flow: initial;
+		grid-template-columns: repeat(auto-fill, minmax(25em, 1fr));
+	}
+
+	.two-cols {
+		grid-column: span 1;
+	}
+
+	.three-cols {
+		grid-column: span 1;
+	}
+
+	.four-cols {
+		grid-column: span 1;
+	}
+}
