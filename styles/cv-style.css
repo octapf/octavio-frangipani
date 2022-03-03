@@ -1,3 +1,33 @@
+#css-icon {
+	color: #00c3ff;
+}
+#html-icon {
+	color: #f16529;
+}
+#js-icon {
+	color: #ffdd24;
+}
+#bs-icon {
+	color: #7952b3;
+}
+#react-icon {
+	color: #60d8fc;
+}
+#node-icon {
+	color: #8ac400;
+}
+#git-icon {
+	color: #f05133;
+}
+#excel-icon {
+	color: #207345;
+}
+#linkedin-icon {
+}
+#github-icon {
+	color: #fff;
+}
+
 .main-container-cv {
 	font-family: 'Maven Pro', sans-serif;
 	color: var(--color-hover-btn);
@@ -35,6 +65,44 @@
 	margin: 0 0.37em 0;
 }
 
+.main-info-cv {
+	font-family: 'Maven Pro', sans-serif;
+	color: var(--color-hover-btn);
+	letter-spacing: 0.012em;
+	padding-top: 2em;
+	width: 60%;
+	margin: 0 auto;
+}
+
+.main-info-cv p {
+	font-size: 0.87rem;
+	padding: 0.31em 0;
+}
+
+.main-info-cv h4 {
+	padding-left: 0.4em;
+	color: var(--header-text-color);
+	font-size: 1.2rem;
+}
+
+.main-info-cv h5 {
+	padding: 0.31em 0;
+	font-size: 1rem;
+}
+
+.main-info-cv a {
+	text-decoration: none;
+	color: var(--header-title-color);
+	padding: 0.31em 0;
+}
+.main-info-cv spam {
+	color: var(--header-title-color);
+}
+.main-info-cv li {
+	padding: 0.3em 0;
+	margin: 0 0.37em 0;
+}
+
 .article-cv {
 	color: var(--header-text-color);
 	background-color: var(--header-darker-color);
@@ -51,6 +119,8 @@
 }
 
 .info-cv {
+	font-family: 'Maven Pro', sans-serif;
+	letter-spacing: 0.012em;
 	color: var(--header-text-color);
 	background-color: var(--header-darker-color);
 	justify-self: flex-start;
@@ -64,6 +134,12 @@
 .info-cv:hover {
 	transition: 0.3s;
 	background-color: var(--header-darker-hover-color);
+}
+
+.info-cv a {
+	font-family: 'Maven Pro', sans-serif;
+	letter-spacing: 0.012em;
+	color: var(--header-title-color);
 }
 
 .foto-perfil-cv {

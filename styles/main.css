@@ -25,6 +25,7 @@ body {
 	box-sizing: border-box;
 	width: 95%;
 	margin: auto;
+	padding: 2em 0;
 }
 
 a {
@@ -77,6 +78,12 @@ ul {
 
 .bgc-sky {
 	background-color: var(--header-title-color);
+}
+
+/* HEAEDER */
+.header {
+	text-align: center;
+	font-family: 'Poiret One', cursive;
 }
 
 /* SCROLL BAR */
@@ -135,20 +142,21 @@ ul {
 }
 
 .logo {
+	text-align: center;
 	display: inline;
-	padding: 1.56em 3.12em;
 	font-weight: 100;
 	font-size: 2.5rem;
-	letter-spacing: 0.1em;
 	color: var(--header-title-color);
 }
 
-.logo h1 {
+.logo h2 {
 	font-weight: 100;
+	letter-spacing: 0.3em;
 }
 
-.logo small {
+.logo h6 {
 	font-size: 1.2rem;
+	letter-spacing: 0.2em;
 }
 
 /* footer */
@@ -256,7 +264,11 @@ ul {
 }
 
 .pady1 {
-	padding: 0.5em 0;
+	padding-bottom: 0.5em;
+}
+
+.pady2 {
+	padding: 2em 0;
 }
 
 .letter-spacing1 {
