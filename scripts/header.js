@@ -6,7 +6,7 @@ header.innerHTML = `<header id="header" class="mar-bottom1">
     <a class="logo" href="index.html"><h1>Octavio Frangipani</h1><small class="sublogo">Full Stack Web Developer</small></a>
         <ul class="ul-flex" >
             <a class="pale" href="index.html"><li>Home</li></a>
-            <a class="pale" href="cv-no-education.html"><li>CV</li></a>
+            <a class="pale" href="cv.html"><li>CV</li></a>
             
             <a class="pale" href="notes.html"><li>Notes</li></a>
             
