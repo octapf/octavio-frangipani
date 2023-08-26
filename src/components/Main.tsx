@@ -5,7 +5,7 @@ const Main = () => {
 				<div className='grid300'>
 					<img
 						className='foto-perfil-cv'
-						src='../../public/octavio-frangipani.jpg'
+						src='../assets/octavio-frangipani.jpg.jpg'
 						alt='foto perfil'
 					/>
 
@@ -18,7 +18,7 @@ const Main = () => {
 							<em id='react-icon' className='fa-brands fa-react'></em>{' '}
 							<em id='node-icon' className='fa-brands fa-node'></em>{' '}
 							<em id='git-icon' className='fa-brands fa-git-alt'></em>{' '}
-							<em id='python-icon' className='fa-brands fa-python'></em>{' '}
+							{/* <em id='python-icon' className='fa-brands fa-python'></em>{' '} */}
 						</h1>
 						<p>Barcelona City, Spain</p>
 						<p>
@@ -407,13 +407,13 @@ const Main = () => {
 						<article className='article-cv'>
 							<p>
 								<em id='html-icon' className='fa-brands fa-html5'></em>
-								<strong> HTML</strong>
+								<strong> HTML5</strong>
 							</p>
 						</article>
 						<article className='article-cv'>
 							<p>
 								<em id='css-icon' className='fa-brands fa-css3-alt'></em>
-								<strong> CSS</strong>
+								<strong> CSS3</strong>
 							</p>
 						</article>
 						<article className='article-cv'>
@@ -444,12 +444,12 @@ const Main = () => {
 								<strong>TypeScript</strong>
 							</p>
 						</article>
-						<article className='article-cv'>
+						{/* <article className='article-cv'>
 							<p>
 								<em id='python-icon' className='fa-brands fa-python'></em>
 								<strong> Python</strong>
 							</p>
-						</article>
+						</article> */}
 
 						<article className='article-cv'>
 							<p>
