@@ -69,14 +69,14 @@ const Main = () => {
 						When I read traditional success and career articles in my 20s, I was
 						bombarded with the same advice: Choose one thing. Focus on doing one
 						thing so well you become known as the best. I have never got to be
-						that person. There is something inside me that does not let me focus
-						on one thing. It's not that I had no idea of what to study, but
-						many. It was not until I found the self-taught path that fulfilled
-						my soul, enabled to mix, merge, and select all the content available
-						out there to be discovered, at my own pace. <br />
-						Born with a deep passion for numbers, commerce, technology, sports,
-						and art, I found myself with a curious career working as a Full
-						Stack Software Developer, with 6 years' experience in the E-commerce
+						that person and get to focus on one thing. It was difficult for me
+						to choose between all the interesting options until I found the
+						self-taught path that fulfilled me, enabled to mix, merge, and
+						select all the content available out there to be discovered, at my
+						own pace. <br />
+						Born with a passion for numbers, commerce, technology, sports, and
+						art, I found myself with a curious career working as a Full Stack
+						Software Developer, with 6 years' experience in the E-commerce
 						retail sector, had a short-lived retail startup before moving to
 						Barcelona, and having worked as a professional photographer for more
 						than 10 years.
@@ -89,11 +89,9 @@ const Main = () => {
 			</section>
 
 			<main className='main-container-cv'>
-				<div className='division'></div>
-
 				<section id='working-experience'>
 					<h4 className='mary1'>
-						Working Experience{' '}
+						Experience{' '}
 						<a href='#header'>
 							<em
 								style={{ fontSize: '12px' }}
@@ -102,6 +100,55 @@ const Main = () => {
 						</a>
 					</h4>
 					<div className='grid300'>
+						<article className='article-cv'>
+							<h5>
+								Frontend Web Developer ( React / TypeScript ) at{' '}
+								<a
+									href='https://www.barcelonactiva.cat/es/itacademy#mesinfo'
+									target='_blank'
+								>
+									Barcelona Activa - IT Academy
+								</a>
+							</h5>
+							<p>
+								January 2023 to present. <br />
+								<small>Barcelona, Spain (On-site)</small>
+							</p>
+
+							<small>
+								Proficiency in HTML/CSS & SASS/JavaScript
+								<br />
+								Implement Responsive Design <br /> Proficiency in Bootstrap
+								Library <br />
+								React/Redux/Typescript Front/Backend implementation <br />{' '}
+								Training in soft skills <br />
+							</small>
+						</article>
+						<article className='article-cv'>
+							<h5>
+								Full Stack Web Developer at{' '}
+								<a href='https://www.dallonses.com/en/' target='_blank'>
+									Dallonses
+								</a>
+							</h5>
+							<p>
+								June 2022 - August 2022 <br />
+								<small>Barcelona, Spain (On-site)</small>
+							</p>
+
+							<p>
+								Using NodeJS & Typescript at Backend
+								<br />
+								Frontend framework React/ContextAPI/GraphQL
+								<br />
+								Working in an Agile environment (SCRUM)
+								<br />
+								Experience creating RESTful API’s
+								<br />
+								Using Git-Flow/GitHub and Git as version control system
+								<br />
+							</p>
+						</article>
 						<article className='article-cv'>
 							<h5>
 								Full Stack Web Developer at{' '}
@@ -113,20 +160,16 @@ const Main = () => {
 								</a>
 							</h5>
 							<p>
-								January 2022 - Present time <br />
-								<small>Barcelona, Spain</small>
+								December 2021 - May 2022 <br />
+								<small>Barcelona, Spain (remote)</small>
 							</p>
 
 							<p>
 								Knowledge of Object-Oriented Programming
 								<br />
-								Implement microservice architectures
-								<br />
 								Working with Azure Cloud Services
 								<br />
 								Main experience with MERN Stack
-								<br />
-								Implement TDD with Unit Testing
 								<br />
 								Using NodeJS & Typescript at Backend
 								<br />
@@ -134,7 +177,6 @@ const Main = () => {
 								<br />
 								Working in an Agile environment (SCRUM)
 								<br />
-								Creation of NPM packages for Express /<br />
 								Experience creating RESTful API’s
 								<br />
 								Quality Documentation and Diagrams
@@ -155,7 +197,7 @@ const Main = () => {
 							</h5>
 							<p>
 								February 2021 - January 2022 <br />
-								<small>Buenos Aires, Argentina</small>
+								<small>Buenos Aires, Argentina (remote)</small>
 							</p>
 
 							<p>
@@ -166,10 +208,6 @@ const Main = () => {
 								Use of React/Redux/Typescript on Frontend
 								<br />
 								NodeJS Typescript MongoDB stack on Backend
-								<br />
-								Working with MVC architectural pattern
-								<br />
-								Applying SOLID Software design principles
 								<br />
 								Experience implementing OTP services
 								<br />
@@ -184,39 +222,7 @@ const Main = () => {
 							</p>
 						</article>
 
-						<article className='article-cv'>
-							<h5>
-								Head of Photography at{' '}
-								<a href='http://www.sodimac.com/' target='_blank'>
-									Sodimac
-								</a>
-							</h5>
-							<p>
-								5 yrs 7 mos <br />
-								<small>Buenos Aires, Argentina, 2013 - 2019</small>
-							</p>
-
-							<p>
-								Photography and Video production on E-commerce sector at
-								multinational retail company. <br />
-								Manage products/photography studio logistics <br />
-								Manage digital content edition <br />
-								Team leader of production (12 people) - Buenos Aires & Uruguay
-								<br />
-								Administrate content of over 47.000 products online-published{' '}
-								<br />
-								Design/Production of monthly catalogue <br />
-								Knowledge of HTML/CSS/JS applied in landings and email marketing{' '}
-								<br />
-								Knowledge of SQL Databases for content info consultancies <br />
-								Intermediate MS Excel level <br />
-							</p>
-						</article>
-					</div>
-				</section>
-				<div className='division'></div>
-
-				{/* <!-- section   -->
+						{/* <!-- section   -->
 		<!-- h4 Education   -->
 		<!-- article   -->
 		<!-- h5 title   -->
@@ -295,8 +301,8 @@ const Main = () => {
 		<!-- institute   -->
 		<!-- city   -->
 		<!-- duration   --> */}
-				<section id='education'>
-					<h4 className='mary1'>
+
+						{/* <h4 className='mary1'>
 						Education{' '}
 						<a href='#header'>
 							<em
@@ -304,39 +310,8 @@ const Main = () => {
 								className='fa-solid fa-angle-up'
 							></em>
 						</a>
-					</h4>
-					<div className='grid300'>
-						<article className='article-cv'>
-							<h5>
-								Frontend Bootcamp ( React / Redux / TypeScript / Unit Testing )
-								at{' '}
-								<a
-									href='https://www.barcelonactiva.cat/es/itacademy#mesinfo'
-									target='_blank'
-								>
-									Barcelona Activa - IT Academy
-								</a>
-							</h5>
-							<p>September 2021 to present.</p>
-							<small>
-								<a
-									href='https://cibernarium.barcelonactiva.cat/it-academy/inscripcio;jsessionid=75DD3AEA4E31B065F1E2C1A936EC750A?p_p_id=activitiesbycode_WAR_cibernariumportlet&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_cacheability=cacheLevelPage&p_p_col_id=column-1&p_p_col_pos=1&p_p_col_count=2&_activitiesbycode_WAR_cibernariumportlet_id=838003'
-									target='_blank'
-									rel='noopener noreferrer'
-								>
-									Details
-								</a>
-							</small>
-							<br />
-							<small>
-								Proficiency in HTML/CSS & SASS/JavaScript
-								<br />
-								Implement Responsive Design <br /> Proficiency in Bootstrap
-								Library <br />
-								React/Redux/Typescript Front/Backend implementation <br />{' '}
-								Training in soft skills <br />
-							</small>
-						</article>
+					</h4> */}
+
 						<article className='article-cv'>
 							<h5>
 								MERN eCommerce Project{' '}
@@ -347,7 +322,10 @@ const Main = () => {
 									Proshop
 								</a>
 							</h5>
-							<p>March 2021 - Present time</p>
+							<p>
+								March 2021 - July 2021 <br />
+								<small>Barcelona, Spain (remote)</small>
+							</p>
 							<small>
 								<a href='#' target='_blank' rel='noopener noreferrer'>
 									Details
@@ -373,7 +351,10 @@ const Main = () => {
 								</a>
 							</h5>
 
-							<p>October 2020 - February 2021</p>
+							<p>
+								October 2020 - February 2021 <br />
+								<small>Barcelona, Spain (remote)</small>
+							</p>
 							<small>
 								Proficiency in HTML/CSS/JavaScript <br />
 								Understanding of DOM Manipulation <br />
@@ -386,9 +367,36 @@ const Main = () => {
 								SQL / NOSQL Database implementation <br />
 								Work with MongoDB & Mongoose ORM <br />
 								Authorization/Authentication workflow <br />
-								Deployment with GitHub Pages, Heroku and MongoDB Atlas
 								<br />
 							</small>
+						</article>
+						<article className='article-cv'>
+							<h5>
+								Head of Photography at{' '}
+								<a href='http://www.sodimac.com/' target='_blank'>
+									Sodimac
+								</a>
+							</h5>
+							<p>
+								November 2013 - April 2019 <br />
+								<small>Buenos Aires, Argentina (On-site)</small>
+							</p>
+
+							<p>
+								Photography and Video production on E-commerce sector at
+								multinational retail company. <br />
+								Manage products/photography studio logistics <br />
+								Manage digital content edition <br />
+								Team leader of production (12 people) - Buenos Aires & Uruguay
+								<br />
+								Administrate content of over 47.000 products online-published{' '}
+								<br />
+								Design/Production of monthly catalogue <br />
+								Knowledge of HTML/CSS/JS applied in landings and email marketing{' '}
+								<br />
+								Knowledge of SQL Databases for content info consultancies <br />
+								Intermediate MS Excel level <br />
+							</p>
 						</article>
 					</div>
 				</section>
