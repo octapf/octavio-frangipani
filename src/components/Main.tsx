@@ -5,7 +5,7 @@ const Main = () => {
 				<div className='grid300'>
 					<img
 						className='foto-perfil-cv'
-						src={'../../public/octavio-frangipani.jpg'}
+						src={'/octavio-frangipani.jpg'}
 						alt='foto perfil'
 					/>
 
