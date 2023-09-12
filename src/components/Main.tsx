@@ -1,8 +1,15 @@
 const Main = () => {
+	const fechaInicio = new Date('2023-02-01').getTime()
+	const fechaFin = new Date().getTime()
+
+	const diff = fechaFin - fechaInicio
+
+	const actualJobDuration = Math.ceil(diff / (1000 * 60 * 60 * 24 * 30))
+
 	return (
 		<main>
 			<section className='main-info-cv'>
-				<div className='grid300'>
+				<div className='grid300 centered'>
 					<img
 						className='foto-perfil-cv'
 						src={'./octavio-frangipani.jpg'}
@@ -48,6 +55,9 @@ const Main = () => {
 							>
 								GitHub Profile
 							</a>
+						</p>
+						<p>
+							<em className='fa-solid fa-check'></em> <a>EU Work permit</a>
 						</p>
 						<p>
 							"Self-taught combined with entrepreneurial-tech goals delivered a
@@ -102,52 +112,47 @@ const Main = () => {
 					<div className='grid300'>
 						<article className='article-cv'>
 							<h5>
-								Frontend Web Developer ( React / TypeScript ) at{' '}
-								<a
-									href='https://www.barcelonactiva.cat/es/itacademy#mesinfo'
-									target='_blank'
-								>
-									Barcelona Activa - IT Academy
+								Full Stack Developer at{' '}
+								<a href='https://www.urbanyhostels.com/' target='_blank'>
+									Urbany Hostels
 								</a>
 							</h5>
 							<p>
-								January 2023 to present. <br />
-								<small>Barcelona, Spain (On-site)</small>
+								February 2023 to present. {`(${actualJobDuration} months)`}
+								<br />
+								<small>Barcelona, Spain (Hybrid)</small>
 							</p>
 
 							<small>
-								Proficiency in HTML/CSS & SASS/JavaScript
+								Proficiency in <i>React</i>
 								<br />
-								Implement Responsive Design <br /> Proficiency in Bootstrap
-								Library <br />
-								React/Redux/Typescript Front/Backend implementation <br />{' '}
-								Training in soft skills <br />
+								Proficiency in <i>HTML / CSS / JavaScript</i>
+								<br />
+								Creation of <i>custom Hooks</i>
+								<br />
+								Implement <i>Typescript</i> in Frontend & Backend
+								<br />
+								Use of styled components
+								<br />
+								Implementation of <i>REDUX</i>
+								<br />
+								Responsive Design
+								<br />
+								Understanding of Clean code & Design patterns
+								<br />
+								Applied <i>Unit Testing - JEST</i>
+								<br />
+								Integrating the PayPal/Strive APIs
+								<br />
+								<i>GitHub and Git</i> for Version Control System
+								<br />
+								Creation of RESTful APIs
+								<br />
+								Work with <i>MongoDB</i> & Mongoose ORM
+								<br />
+								Authorization/Authentication workflow
+								<br />
 							</small>
-						</article>
-						<article className='article-cv'>
-							<h5>
-								Full Stack Web Developer at{' '}
-								<a href='https://www.dallonses.com/en/' target='_blank'>
-									Dallonses
-								</a>
-							</h5>
-							<p>
-								June 2022 - August 2022 <br />
-								<small>Barcelona, Spain (On-site)</small>
-							</p>
-
-							<p>
-								Using NodeJS & Typescript at Backend
-								<br />
-								Frontend framework React/ContextAPI/GraphQL
-								<br />
-								Working in an Agile environment (SCRUM)
-								<br />
-								Experience creating RESTful API’s
-								<br />
-								Using Git-Flow/GitHub and Git as version control system
-								<br />
-							</p>
 						</article>
 						<article className='article-cv'>
 							<h5>
@@ -160,34 +165,35 @@ const Main = () => {
 								</a>
 							</h5>
 							<p>
-								December 2021 - May 2022 <br />
+								December 2021 - May 2022 (6 months)
+								<br />
 								<small>Barcelona, Spain (remote)</small>
 							</p>
 
-							<p>
-								Knowledge of Object-Oriented Programming
+							<small>
+								Knowledge of <i>Object Oriented Programming</i> <br />
+								Implement microservice architectures
 								<br />
 								Working with Azure Cloud Services
 								<br />
-								Main experience with MERN Stack
+								Main experience with <i>MERN Stack</i>
 								<br />
-								Using NodeJS & Typescript at Backend
+								Implement TDD with Unit Testing
 								<br />
-								Frontend framework React/Redux
+								Using <i>Typescript</i> for Front and Backend
 								<br />
-								Working in an Agile environment (SCRUM)
+								<i>Agile Methodology</i> (SCRUM)
+								<br />
+								Frontend framework <i>React / Redux</i>
 								<br />
 								Experience creating RESTful API’s
 								<br />
 								Quality Documentation and Diagrams
 								<br />
-								Knowledge of Containerization (Docker, Kubernetes)
+								Using Git-Flow and Git for Version control system
 								<br />
-								Using Git-Flow/GitHub and Git as version control system
-								<br />
-							</p>
+							</small>
 						</article>
-
 						<article className='article-cv'>
 							<h5>
 								Full Stack Web Developer at{' '}
@@ -196,181 +202,34 @@ const Main = () => {
 								</a>
 							</h5>
 							<p>
-								February 2021 - January 2022 <br />
+								February 2021 - January 2022 (1 year)
+								<br />
 								<small>Buenos Aires, Argentina (remote)</small>
 							</p>
 
-							<p>
-								E-commerce site development implementing PayPal/Mercado Pago
-								<br />
-								Proficiency with HTML/CSS/JS
-								<br />
-								Use of React/Redux/Typescript on Frontend
-								<br />
-								NodeJS Typescript MongoDB stack on Backend
-								<br />
-								Experience implementing OTP services
-								<br />
-								Working with SCRUM as an Agile methodology
-								<br />
-								Experience building APIs
-								<br />
-								Live team code reviews
-								<br />
-								Proficiency in GitFlow
-								<br />
-							</p>
-						</article>
-
-						{/* <!-- section   -->
-		<!-- h4 Education   -->
-		<!-- article   -->
-		<!-- h5 title   -->
-		<!-- institute   -->
-		<!-- city   -->
-		<!-- duration   -->
-		<!-- <section id="education"> -->
-		<!-- <h4 className="mary1"> -->
-		<!-- Education -->
-		<!-- <a href="#header"><em style="font-size: 12px" className="fa-solid fa-angle-up"></em></a> -->
-		<!-- </h4> -->
-		<!-- <div className="grid300"> -->
-		<!-- <article className="article-cv"> -->
-		<!-- <h5> -->
-		<!-- Frontend Bootcamp ( React / Redux / TypeScript / UnitTesting ) at -->
-		<!-- <a href="https://www.barcelonactiva.cat/es/itacademy#mesinfo" target="_blank">Barcelona Activa - -->
-		<!-- IT Academy</a> -->
-		<!-- </h5> -->
-		<!-- <p>September 2021 to present.</p> -->
-		<!-- <small><a -->
-		<!-- href="https://cibernarium.barcelonactiva.cat/it-academy/inscripcio;jsessionid=75DD3AEA4E31B065F1E2C1A936EC750A?p_p_id=activitiesbycode_WAR_cibernariumportlet&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_cacheability=cacheLevelPage&p_p_col_id=column-1&p_p_col_pos=1&p_p_col_count=2&_activitiesbycode_WAR_cibernariumportlet_id=838003" -->
-		<!-- target="_blank" rel="noopener noreferrer">Details</a></small> -->
-		<!-- <br /> -->
-		<!-- <small>Proficiency in HTML/CSS & SASS/Javascript</br>Implement Responsive Design </br> Proficiency -->
-		<!-- in Bootstrap Library </br> -->
-		<!-- React/Redux & Typescript Front/BackEnd </br> Training in SoftSkills </br></small> -->
-		<!--  -->
-		<!-- </article> -->
-		<!-- <article className="article-cv"> -->
-		<!-- <h5> -->
-		<!-- MERN eCommerce Project <a href="https://proshop-app-177.herokuapp.com/" -->
-		<!-- target="_blank">Proshop</a> -->
-		<!-- </h5> -->
-		<!-- <p>March 2021 - Present time</p> -->
-		<!-- <small><a href="https://www.udemy.com/course/mern-ecommerce/" target="_blank" -->
-		<!-- rel="noopener noreferrer">Details</a></small> -->
-		<!-- <br /> -->
-		<!-- <small>Develop a full transactional e-commerce website <br /> -->
-		<!-- Implement MERN stack, REDUX and React-Bootstrap <br /> -->
-		<!-- Nodejs/ExpressJs with MongoDB/Mongoose ORM <br /> -->
-		<!-- Use of JWT authentication <br /> -->
-		<!-- Creating Custom error handlers <br /> -->
-		<!-- Integrating the PayPal/Strive APIs <br /> -->
-		<!-- Project deployment to Heroku</small> -->
-		<!-- </article> -->
-		<!--  -->
-		<!-- <article className="article-cv"> -->
-		<!-- <h5> -->
-		<!-- Full Stack Web Development BootCamp at -->
-		<!-- <a href="https://www.appbrewery.co/" target="_blank">AppBrewery</a> -->
-		<!-- </h5> -->
-		<!--  -->
-		<!--  -->
-		<!-- <p>October 2020 - February 2021</p> -->
-		<!-- <small> -->
-		<!-- Proficiency in HTML/CSS/Javascript </br> -->
-		<!-- Understanding of DOM Manipulation </br> -->
-		<!-- MERN Stack with REDUX</br> -->
-		<!-- GitHub and Git for Version Control System </br> -->
-		<!-- Express & Nodejs Backend implementation</br> -->
-		<!-- Creation of RESTful APIs </br> -->
-		<!-- SQL / NOSQL Database implementation </br> -->
-		<!-- Work with MongoDB & Mongoose ORM </br> -->
-		<!-- Authorization/Authentication workflow </br> -->
-		<!-- Deployment with GitHub Pages, Heroku and MongoDB Atlas</br> -->
-		<!-- </small> -->
-		<!-- </article> -->
-		<!--  -->
-		<!--  -->
-		<!-- </div> -->
-		<!-- </section> -->
-		<!-- section   -->
-		<!-- h4 Education   -->
-		<!-- article   -->
-		<!-- h5 title   -->
-		<!-- institute   -->
-		<!-- city   -->
-		<!-- duration   --> */}
-
-						{/* <h4 className='mary1'>
-						Education{' '}
-						<a href='#header'>
-							<em
-								style={{ fontSize: '12px' }}
-								className='fa-solid fa-angle-up'
-							></em>
-						</a>
-					</h4> */}
-
-						<article className='article-cv'>
-							<h5>
-								MERN eCommerce Project{' '}
-								<a
-									href='https://proshop-app-177.herokuapp.com/'
-									target='_blank'
-								>
-									Proshop
-								</a>
-							</h5>
-							<p>
-								March 2021 - July 2021 <br />
-								<small>Barcelona, Spain (remote)</small>
-							</p>
 							<small>
-								<a href='#' target='_blank' rel='noopener noreferrer'>
-									Details
-								</a>
-							</small>
-							<br />
-							<small>
-								Develop a full transactional e-commerce website <br />
-								Implement MERN stack, REDUX and React-Bootstrap <br />
-								Nodejs/ExpressJs with MongoDB/Mongoose ORM <br />
-								Use of JWT authentication <br />
-								Creating of Custom error handlers <br />
-								Integrating the PayPal API <br />
-								Project deployment to Heroku
-							</small>
-						</article>
-
-						<article className='article-cv'>
-							<h5>
-								Full Stack Web Development BootCamp at{' '}
-								<a href='https://www.appbrewery.co/' target='_blank'>
-									The App Brewery
-								</a>
-							</h5>
-
-							<p>
-								October 2020 - February 2021 <br />
-								<small>Barcelona, Spain (remote)</small>
-							</p>
-							<small>
-								Proficiency in HTML/CSS/JavaScript <br />
-								Understanding of DOM Manipulation <br />
-								MERN Stack with REDUX
+								Implement <i>payment processing system</i> (PayPal / Mercado
+								Pago)
 								<br />
-								GitHub and Git for Version Control System <br />
-								Express & Nodejs Backend implementation
+								Proficiency with <i>HTML / CSS / JS</i>
 								<br />
-								Creation of RESTful APIs <br />
-								SQL / NOSQL Database implementation <br />
-								Work with MongoDB & Mongoose ORM <br />
-								Authorization/Authentication workflow <br />
+								Use of <i>React / Redux / Typescript</i> on Frontend
+								<br />
+								Typescript, <i>NodeJS & MongoDB</i> stack on Backend
+								<br />
+								Experience implementing <i>OTP services</i>
+								<br />
+								Working with <i>SCRUM</i> as an Agile methodology
+								<br />
+								Experience building <i>APIs</i>
+								<br />
+								Live team <i>code reviews</i>
+								<br />
+								Proficiency in <i>GitFlow</i>
 								<br />
 							</small>
 						</article>
-						<article className='article-cv'>
+						{/* <article className='article-cv'>
 							<h5>
 								Head of Photography at{' '}
 								<a href='http://www.sodimac.com/' target='_blank'>
@@ -378,25 +237,153 @@ const Main = () => {
 								</a>
 							</h5>
 							<p>
-								November 2013 - April 2019 <br />
+								November 2013 - April 2019 (5.7 years)<br />
 								<small>Buenos Aires, Argentina (On-site)</small>
 							</p>
 
-							<p>
+							<small>
+								Knowledge of HTML/CSS/JS applied in landings and email marketing
+								<br />
+								Knowledge of SQL Databases for content info consultancies
+								<br />
+								Intermediate MS Excel level
+								<br />
 								Photography and Video production on E-commerce sector at
-								multinational retail company. <br />
-								Manage products/photography studio logistics <br />
-								Manage digital content edition <br />
+								multinational retail company
+								<br />
+								Manage products/photography studio logistics
+								<br />
+								Manage digital content edition
+								<br />
 								Team leader of production (12 people) - Buenos Aires & Uruguay
 								<br />
-								Administrate content of over 47.000 products online-published{' '}
+								Administrate content of over 47.000 products online-published
 								<br />
-								Design/Production of monthly catalogue <br />
-								Knowledge of HTML/CSS/JS applied in landings and email marketing{' '}
+								Design/Production of monthly catalogue
 								<br />
-								Knowledge of SQL Databases for content info consultancies <br />
-								Intermediate MS Excel level <br />
-							</p>
+							</small>
+						</article> */}
+					</div>
+				</section>
+				<section id='education'>
+					<h4 className='mary1'>
+						Education{' '}
+						<a href='#header'>
+							<em
+								style={{ fontSize: '12px' }}
+								className='fa-solid fa-angle-up'
+							></em>
+						</a>
+					</h4>
+					<div className='grid300'>
+						<article className='article-cv'>
+							<h5>
+								Full Stack Web Developer at{' '}
+								<a
+									href='https://www.barcelonactiva.cat/es/itacademy#mesinfo'
+									target='_blank'
+								>
+									Barcelona Activa - IT Academy
+								</a>
+							</h5>
+							<p>April 2023 - August 2023 (4 months)</p>
+							<small>
+								<a
+									href='https://cibernarium.barcelonactiva.cat/it-academy/inscripcio;jsessionid=75DD3AEA4E31B065F1E2C1A936EC750A?p_p_id=activitiesbycode_WAR_cibernariumportlet&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_cacheability=cacheLevelPage&p_p_col_id=column-1&p_p_col_pos=1&p_p_col_count=2&_activitiesbycode_WAR_cibernariumportlet_id=838003'
+									target='_blank'
+									rel='noopener noreferrer'
+								>
+									Details
+								</a>
+							</small>
+							<br />
+							<small>
+								Proficiency in <i>React</i>
+								<br />
+								Creation of <i>custom Hooks</i>
+								<br />
+								Implement <i>Typescript</i> in front/back end
+								<br />
+								Use of <i>styled components</i>
+								<br />
+								Use of Redux & <i>UseContext API</i>
+								<br />
+								<i>Responsive Design</i>
+								<br />
+								Understanding of <i>Clean code & Design patterns</i>
+								<br />
+								Applied Unit Testing - <i>JEST</i>
+								<br />
+							</small>
+						</article>
+						<article className='article-cv'>
+							<h5>
+								Full Stack MERN eCommerce Project{' '}
+								<a
+									href='https://www.udemy.com/course/mern-ecommerce/'
+									target='_blank'
+								>
+									Proshop
+								</a>
+							</h5>
+							<p>March 2021 - July 2021 (5 months)</p>
+							<small>
+								<a
+									href='https://www.udemy.com/course/mern-ecommerce/'
+									target='_blank'
+									rel='noopener noreferrer'
+								>
+									Details
+								</a>
+							</small>
+							<br />
+							<small>
+								Develop a full <i>transactional e-commerce website</i>
+								<br />
+								Implement MERN stack, REDUX and <i>React-Bootstrap</i>
+								<br />
+								<i>Nodejs/ExpressJs</i> with <i>MongoDB/Mongoose</i> ORM
+								<br />
+								Use of <i>JWT authentication</i>
+								<br />
+								Creating <i>Custom error handlers</i>
+								<br />
+								Integrating the <i>PayPal/Strive</i> APIs
+								<br />
+								Project <i>deployment</i> to Heroku
+								<br />
+							</small>
+						</article>
+
+						<article className='article-cv'>
+							<h5>
+								Full Stack Web Development BootCamp at{' '}
+								<a href='https://www.appbrewery.co/' target='_blank'>
+									AppBrewery
+								</a>
+							</h5>
+
+							<p>October 2020 - February 2021 (4 months)</p>
+							<small>
+								Proficiency in <i>HTML / CSS / JavaScript</i>
+								<br />
+								Understanding of <i>DOM Manipulation</i>
+								<br />
+								MERN Stack with <i>REDUX</i>
+								<br />
+								GitHub and Git for Version Control System
+								<br />
+								<i>Express & Nodejs</i> Backend implementation
+								<br />
+								Creation of <i>RESTful APIs</i>
+								<br />
+								<i>SQL / NOSQL Database</i> implementation
+								<br />
+								Work with MongoDB & <i>Mongoose</i> ORM
+								<br />
+								<i>Authorization/Authentication</i> workflow
+								<br />
+							</small>
 						</article>
 					</div>
 				</section>
@@ -452,12 +439,6 @@ const Main = () => {
 								<strong>TypeScript</strong>
 							</p>
 						</article>
-						{/* <article className='article-cv'>
-							<p>
-								<em id='python-icon' className='fa-brands fa-python'></em>
-								<strong> Python</strong>
-							</p>
-						</article> */}
 
 						<article className='article-cv'>
 							<p>
