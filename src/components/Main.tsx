@@ -123,7 +123,9 @@ const Main = () => {
 								<br />
 								Implement <i>Typescript</i> in Frontend & Backend
 								<br />
-								Use of styled components
+								Work with <i>Node & Express.Js</i> in Backend
+								<br />
+								Use of <i>styled components</i>
 								<br />
 								Implementation of <i>REDUX</i>
 								<br />
@@ -172,6 +174,8 @@ const Main = () => {
 								Implement TDD with Unit Testing
 								<br />
 								Using <i>Typescript</i> for Front and Backend
+								<br />
+								Work with <i>Node & Express.Js</i> in Backend
 								<br />
 								<i>Agile Methodology</i> (SCRUM)
 								<br />
