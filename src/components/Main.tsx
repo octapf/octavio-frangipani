@@ -77,14 +77,17 @@ const Main = () => {
 				<article className='info-cv'>
 					<p>
 						Born with a passion for numbers, commerce and technology. I got
-						myself a curious career working as a Full Stack Software Developer,
-						with bast experience in the E-commerce retail sector and had a
-						short-lived retail startup before moving to Barcelona.
-						<br />I am an enthusiastic, self-motivated, reliable, responsible
-						and hard working person. I am a mature team worker and adaptable to
-						all challenging situations. <br />I am able to work well both in a
-						team environment as well as using own initiative and able to work
-						well under pressure with strict deadlines.
+						myself a curious career working as a{' '}
+						<i>Full Stack Software Developer</i>, with bast experience in the
+						E-commerce retail sector and had a short-lived retail startup before
+						moving to Barcelona.
+						<br />I am an <i>enthusiastic</i>, <i>self-motivated</i>,
+						<i>reliable</i>, <i>responsible</i>
+						and hard working person . I am a mature <i>team worker</i> and
+						adaptable to all challenging situations. <br />I am able to work
+						well both in a team environment as well as using own{' '}
+						<i>initiative</i> and able to work well under pressure with strict
+						deadlines.
 					</p>
 				</article>
 			</section>
