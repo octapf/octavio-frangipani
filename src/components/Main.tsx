@@ -82,12 +82,11 @@ const Main = () => {
 						E-commerce retail sector and had a short-lived retail startup before
 						moving to Barcelona.
 						<br />I am an <i>enthusiastic</i>, <i>self-motivated</i>,
-						<i>reliable</i>, <i>responsible</i>
-						and hard working person . I am a mature <i>team worker</i> and
-						adaptable to all challenging situations. <br />I am able to work
-						well both in a team environment as well as using own{' '}
-						<i>initiative</i> and able to work well under pressure with strict
-						deadlines.
+						<i>reliable</i>, <i>responsible</i> and hard working person . I am a
+						mature <i>team worker</i> and adaptable to all challenging
+						situations. <br />I am able to work well both in a team environment
+						as well as using own <i>initiative</i> and able to work well under
+						pressure with strict deadlines.
 					</p>
 				</article>
 			</section>
