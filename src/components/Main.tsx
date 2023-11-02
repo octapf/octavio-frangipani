@@ -76,24 +76,15 @@ const Main = () => {
 				</h4>
 				<article className='info-cv'>
 					<p>
-						When I read traditional success and career articles in my 20s, I was
-						bombarded with the same advice: Choose one thing. Focus on doing one
-						thing so well you become known as the best. I have never got to be
-						that person and get to focus on one thing. It was difficult for me
-						to choose between all the interesting options until I found the
-						self-taught path that fulfilled me, enabled to mix, merge, and
-						select all the content available out there to be discovered, at my
-						own pace. <br />
-						Born with a passion for numbers, commerce, technology, sports, and
-						art, I found myself with a curious career working as a Full Stack
-						Software Developer, with 6 years' experience in the E-commerce
-						retail sector, had a short-lived retail startup before moving to
-						Barcelona, and having worked as a professional photographer for more
-						than 10 years.
-						<br />I still have a lot to learn from future mistakes, projects,
-						and people. But I can tell you that if you are willing to take this
-						path, sometimes frustrating and uncertain, you will be able to shape
-						yourself with a dash of originality.
+						Born with a passion for numbers, commerce and technology. I got
+						myself a curious career working as a Full Stack Software Developer,
+						with bast experience in the E-commerce retail sector and had a
+						short-lived retail startup before moving to Barcelona.
+						<br />I am an enthusiastic, self-motivated, reliable, responsible
+						and hard working person. I am a mature team worker and adaptable to
+						all challenging situations. <br />I am able to work well both in a
+						team environment as well as using own initiative and able to work
+						well under pressure with strict deadlines.
 					</p>
 				</article>
 			</section>
