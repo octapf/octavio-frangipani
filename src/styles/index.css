@@ -467,6 +467,32 @@ ul {
 	border: none;
 }
 
+.header-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.header-container h2 {
+	margin: auto;
+}
+
+.language-select {
+	font-family: 'Maven Pro', cursive;
+	font-size: 1rem;
+	border-radius: 0.7rem;
+	padding: 0.5rem;
+	background-color: var(--header-container-color);
+	color: var(--box-color);
+	border: 1px solid var(--box-color);
+	margin-right: 2rem;
+}
+
+select:focus {
+	outline: none;
+}
+
 .app-container {
 	background-color: var(--header-container-color);
 }

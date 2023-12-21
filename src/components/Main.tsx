@@ -1,6 +1,10 @@
+import { useTranslation } from 'react-i18next'
+
 const Main = () => {
 	const fechaInicio = new Date('2023-02-01').getTime()
 	const fechaFin = new Date().getTime()
+
+	const { t } = useTranslation()
 
 	const diff = fechaFin - fechaInicio
 
@@ -18,16 +22,37 @@ const Main = () => {
 
 					<article className='info-cv'>
 						<h1>
-							<em id='html-icon' className='fa-brands fa-html5'></em>{' '}
-							<em id='css-icon' className='fa-brands fa-css3-alt'></em>{' '}
-							<em id='js-icon' className='fa-brands fa-js-square'></em>{' '}
-							<em id='bs-icon' className='fab fa-bootstrap'></em>{' '}
-							<em id='react-icon' className='fa-brands fa-react'></em>{' '}
-							<em id='node-icon' className='fa-brands fa-node'></em>{' '}
-							<em id='git-icon' className='fa-brands fa-git-alt'></em>{' '}
+							<em
+								id='html-icon'
+								className='fa-brands fa-html5'
+							></em>{' '}
+							<em
+								id='css-icon'
+								className='fa-brands fa-css3-alt'
+							></em>{' '}
+							<em
+								id='js-icon'
+								className='fa-brands fa-js-square'
+							></em>{' '}
+							<em
+								id='bs-icon'
+								className='fab fa-bootstrap'
+							></em>{' '}
+							<em
+								id='react-icon'
+								className='fa-brands fa-react'
+							></em>{' '}
+							<em
+								id='node-icon'
+								className='fa-brands fa-node'
+							></em>{' '}
+							<em
+								id='git-icon'
+								className='fa-brands fa-git-alt'
+							></em>{' '}
 							{/* <em id='python-icon' className='fa-brands fa-python'></em>{' '} */}
 						</h1>
-						<p>Barcelona City, Spain</p>
+						<p>{t('city')}</p>
 						<p>
 							<em className='fas fa-envelope'></em>{' '}
 							<a href='mailto:frangipani.octavio@gmail.com'>
@@ -38,35 +63,42 @@ const Main = () => {
 							<em className='fas fa-phone'></em>{' '}
 							<a href='tel:+34722696514'>+34 722 69 65 14</a>
 						</p>
+
 						<p>
-							<em id='linkedin-icon' className='fab fa-linkedin'></em>{' '}
+							<em
+								id='linkedin-icon'
+								className='fab fa-linkedin'
+							></em>{' '}
 							<a
 								href='https://www.linkedin.com/in/octavio-frangipani-080aa947/'
 								target='_blank'
 							>
-								LinkedIn Profile
+								{t('linkedin')}
 							</a>
 						</p>
 						<p>
-							<em id='github-icon' className='fab fa-github-square'></em>{' '}
+							<em
+								id='github-icon'
+								className='fab fa-github-square'
+							></em>{' '}
 							<a
 								href='https://github.com/octapf?tab=repositories'
 								target='_blank'
 							>
-								GitHub Profile
+								{t('github')}
 							</a>
 						</p>
 						<p>
-							<em className='fa-solid fa-check'></em> <a>EU Work permit</a>
+							<em className='fa-solid fa-check'></em> <a>{t('work-permit')}</a>
 						</p>
 						<p>
-							"Self-taught combined with entrepreneurial-tech goals delivered a
-							fast-learner Full Stack Software Developer"
+							<em className='fa-solid fa-language'></em> <a>{t('language')}</a>
 						</p>
+						<p>{t('summary')}</p>
 					</article>
 				</div>
 				<h4 className='mary1'>
-					About{' '}
+					{t('about')}{' '}
 					<a href='#header'>
 						<em
 							style={{ fontSize: '12px' }}
@@ -75,26 +107,14 @@ const Main = () => {
 					</a>
 				</h4>
 				<article className='info-cv'>
-					<p>
-						Born with a passion for numbers, commerce and technology. I got
-						myself a curious career working as a{' '}
-						<i>Full Stack Software Developer</i>, with bast experience in the
-						E-commerce retail sector and had a short-lived retail startup before
-						moving to Barcelona.
-						<br />I am an <i>enthusiastic</i>, <i>self-motivated</i>,
-						<i>reliable</i>, <i>responsible</i> and hard working person . I am a
-						mature <i>team worker</i> and adaptable to all challenging
-						situations. <br />I am able to work well both in a team environment
-						as well as using own <i>initiative</i> and able to work well under
-						pressure with strict deadlines.
-					</p>
+					<p>{t('about-text')}</p>
 				</article>
 			</section>
 
 			<main className='main-container-cv'>
 				<section id='working-experience'>
 					<h4 className='mary1'>
-						Experience{' '}
+						{t('experience')}{' '}
 						<a href='#header'>
 							<em
 								style={{ fontSize: '12px' }}
@@ -105,53 +125,59 @@ const Main = () => {
 					<div className='grid300'>
 						<article className='article-cv'>
 							<h5>
-								Full Stack Developer at{' '}
-								<a href='https://www.urbanyhostels.com/' target='_blank'>
+								Full Stack {t('developer')} {t('at')}{' '}
+								<a
+									href='https://www.urbanyhostels.com/'
+									target='_blank'
+								>
 									Urbany Hostels
 								</a>
 							</h5>
 							<p>
-								February 2023 to present. {`(${actualJobDuration} months)`}
+								{t('February 2023 to present')}{' '}
+								{`(${actualJobDuration} ${t('months')})`}
 								<br />
-								<small>Barcelona, Spain (Hybrid)</small>
+								<small>
+									{t('city')} ({t('hybrid')})
+								</small>
 							</p>
 
 							<small>
-								Proficiency in <i>React</i>
+								{t('Proficiency in')} <i>React</i>
 								<br />
-								Proficiency in <i>HTML / CSS / JavaScript</i>
+								{t('Proficiency in')} <i>HTML / CSS / JavaScript</i>
 								<br />
-								Creation of <i>custom Hooks</i>
+								{t('Creation of')} <i>custom Hooks</i>
 								<br />
-								Implement <i>Typescript</i> in Frontend & Backend
+								{t('Implement')} <i>Typescript</i> - Frontend & Backend
 								<br />
-								Work with <i>Node & Express.Js</i> in Backend
+								{t('Working with')} <i>Node & Express.Js</i> - Backend
 								<br />
-								Use of <i>styled components</i>
+								{t('Use of')} <i>styled components</i>
 								<br />
-								Implementation of <i>REDUX</i>
+								{t('Implement')} <i>REDUX</i>
 								<br />
-								Responsive Design
+								{t('Responsive Design')}
 								<br />
-								Understanding of Clean code & Design patterns
+								{t('Understanding of Clean code & Design patterns')}
 								<br />
-								Applied <i>Unit Testing - JEST</i>
+								{t('Applied')} <i>Unit Testing - JEST</i>
 								<br />
-								Integrating the PayPal/Strive APIs
+								{t('Integrating')} PayPal/Strive APIs
 								<br />
-								<i>GitHub and Git</i> for Version Control System
+								<i>GitHub & Git</i> {t('for Version Control System')}
 								<br />
-								Creation of RESTful APIs
+								{t('Creation of')} RESTful APIs
 								<br />
-								Work with <i>MongoDB</i> & Mongoose ORM
+								{t('Working with')} <i>MongoDB</i> & Mongoose ORM
 								<br />
-								Authorization/Authentication workflow
+								{t('Authorization/Authentication workflow')}
 								<br />
 							</small>
 						</article>
 						<article className='article-cv'>
 							<h5>
-								Full Stack Web Developer at{' '}
+								Full Stack Web {t('developer')} {t('at')}{' '}
 								<a
 									href='https://www.linkedin.com/company/worksut/mycompany/'
 									target='_blank'
@@ -160,69 +186,76 @@ const Main = () => {
 								</a>
 							</h5>
 							<p>
-								December 2021 - May 2022 (6 months)
+								{t('December 2021 - May 2022')} (6 {t('months')})
 								<br />
-								<small>Barcelona, Spain (remote)</small>
+								<small>
+									{t('city')} ({t('remote')})
+								</small>
 							</p>
 
 							<small>
-								Knowledge of <i>Object Oriented Programming</i> <br />
-								Implement microservice architectures
+								{t('Knowledge of')} <i>{t('Object Oriented Programming')}</i>{' '}
 								<br />
-								Working with Azure Cloud Services
+								{t('Implement microservice architectures')}
 								<br />
-								Main experience with <i>MERN Stack</i>
+								{t('Working with')} Azure Cloud Services
 								<br />
-								Implement TDD with Unit Testing
+								{t('Main experience with')} <i>MERN Stack</i>
 								<br />
-								Using <i>Typescript</i> for Front and Backend
+								{t('Implement')} TDD & Unit Testing
 								<br />
-								Work with <i>Node & Express.Js</i> in Backend
+								{t('Usign')} <i>Typescript</i> - Front & Backend
 								<br />
-								<i>Agile Methodology</i> (SCRUM)
+								{t('Working with')} <i>Node & Express.Js</i> - Backend
 								<br />
-								Frontend framework <i>React / Redux</i>
+								<i>{t('Agile Methodology')}</i> (SCRUM)
 								<br />
-								Experience creating RESTful API’s
+								{t('Implement')} <i>React / Redux</i>
 								<br />
-								Quality Documentation and Diagrams
+								{t('Experience building')} RESTful API’s
 								<br />
-								Using Git-Flow and Git for Version control system
+								{t('Quality Documentation and Diagrams')}
+								<br />
+								{t('Using Git-Flow and Git for Version control system')}
 								<br />
 							</small>
 						</article>
 						<article className='article-cv'>
 							<h5>
-								Full Stack Web Developer at{' '}
-								<a href='#' target='_blank'>
+								Full Stack Web {t('developer')} {t('at')}{' '}
+								<a
+									href='#'
+									target='blank'
+								>
 									Letizia
 								</a>
 							</h5>
 							<p>
-								February 2021 - January 2022 (1 year)
+								{t('February 2021 - January 2022')} (1 {t('year')})
 								<br />
-								<small>Buenos Aires, Argentina (remote)</small>
+								<small>
+									{t('city-2')} ({t('remote')})
+								</small>
 							</p>
 
 							<small>
-								Implement <i>payment processing system</i> (PayPal / Mercado
-								Pago)
+								{t('Implement')} <i>{t('payment processing system')}</i>
 								<br />
-								Proficiency with <i>HTML / CSS / JS</i>
+								{t('Proficiency in')} <i>HTML / CSS / JS</i>
 								<br />
-								Use of <i>React / Redux / Typescript</i> on Frontend
+								{t('Use of')} <i>React / Redux / Typescript</i> - Frontend
 								<br />
-								Typescript, <i>NodeJS & MongoDB</i> stack on Backend
+								Typescript, <i>NodeJS & MongoDB</i> stack - Backend
 								<br />
-								Experience implementing <i>OTP services</i>
+								{t('Experience implementing')} <i>OTP services</i>
 								<br />
-								Working with <i>SCRUM</i> as an Agile methodology
+								{t('Working with')} <i>SCRUM</i> as an Agile methodology
 								<br />
-								Experience building <i>APIs</i>
+								{t('Experience building')} <i>APIs</i>
 								<br />
-								Live team <i>code reviews</i>
+								{t('Live team')} <i>{t('code reviews')}</i>
 								<br />
-								Proficiency in <i>GitFlow</i>
+								{t('Proficiency in')} <i>GitFlow</i>
 								<br />
 							</small>
 						</article>
@@ -355,7 +388,10 @@ const Main = () => {
 						<article className='article-cv'>
 							<h5>
 								Full Stack Web Development BootCamp at{' '}
-								<a href='https://www.appbrewery.co/' target='_blank'>
+								<a
+									href='https://www.appbrewery.co/'
+									target='_blank'
+								>
 									AppBrewery
 								</a>
 							</h5>
@@ -398,31 +434,46 @@ const Main = () => {
 					<div className='grid120'>
 						<article className='article-cv'>
 							<p>
-								<em id='html-icon' className='fa-brands fa-html5'></em>
+								<em
+									id='html-icon'
+									className='fa-brands fa-html5'
+								></em>
 								<strong> HTML5</strong>
 							</p>
 						</article>
 						<article className='article-cv'>
 							<p>
-								<em id='css-icon' className='fa-brands fa-css3-alt'></em>
+								<em
+									id='css-icon'
+									className='fa-brands fa-css3-alt'
+								></em>
 								<strong> CSS3</strong>
 							</p>
 						</article>
 						<article className='article-cv'>
 							<p>
-								<em id='js-icon' className='fa-brands fa-js'></em>
+								<em
+									id='js-icon'
+									className='fa-brands fa-js'
+								></em>
 								<strong> JavaScript</strong>
 							</p>
 						</article>
 						<article className='article-cv'>
 							<p>
-								<em id='bs-icon' className='fab fa-bootstrap'></em>
+								<em
+									id='bs-icon'
+									className='fab fa-bootstrap'
+								></em>
 								<strong> Bootstrap</strong>
 							</p>
 						</article>
 						<article className='article-cv'>
 							<p>
-								<em id='react-icon' className='fa-brands fa-react'></em>
+								<em
+									id='react-icon'
+									className='fa-brands fa-react'
+								></em>
 								<strong> React</strong>
 							</p>
 						</article>
@@ -449,14 +500,20 @@ const Main = () => {
 						</article>
 						<article className='article-cv'>
 							<p>
-								<em id='node-icon' className='fa-brands fa-node'></em>
+								<em
+									id='node-icon'
+									className='fa-brands fa-node'
+								></em>
 								<strong> Node.js</strong>
 							</p>
 						</article>
 
 						<article className='article-cv'>
 							<p>
-								<em id='git-icon' className='fa-brands fa-git-alt'></em>
+								<em
+									id='git-icon'
+									className='fa-brands fa-git-alt'
+								></em>
 								<strong> Git</strong>
 							</p>
 						</article>
