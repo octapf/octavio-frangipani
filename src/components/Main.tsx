@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next'
+import { capitalize } from '../utils/capitalize'
 
 const Main = () => {
 	const fechaInicio = new Date('2023-02-01').getTime()
@@ -258,7 +259,7 @@ const Main = () => {
 								<br />
 								{t('Experience implementing')} <i>OTP services</i>
 								<br />
-								{t('Working with')} <i>SCRUM</i> as an Agile methodology
+								{t('Working with')} <i>SCRUM</i> {t('as Agile methodology')}
 								<br />
 								{t('Experience building')} <i>APIs</i>
 								<br />
@@ -306,7 +307,7 @@ const Main = () => {
 				</section>
 				<section id='education'>
 					<h4 className='mary1'>
-						Education{' '}
+						{t('education')}{' '}
 						<a href='#header'>
 							<em
 								style={{ fontSize: '12px' }}
@@ -317,7 +318,7 @@ const Main = () => {
 					<div className='grid300'>
 						<article className='article-cv'>
 							<h5>
-								Full Stack Web Developer at{' '}
+								Full Stack Web {t('developer')} {t('at')}{' '}
 								<a
 									href='https://www.barcelonactiva.cat/es/itacademy#mesinfo'
 									target='_blank'
@@ -325,39 +326,42 @@ const Main = () => {
 									Barcelona Activa - IT Academy
 								</a>
 							</h5>
-							<p>April 2023 - August 2023 (4 months)</p>
+							<p>
+								{t('April 2023 - August 2023')} (4 {t('months')})
+							</p>
 							<small>
 								<a
 									href='https://cibernarium.barcelonactiva.cat/it-academy/inscripcio;jsessionid=75DD3AEA4E31B065F1E2C1A936EC750A?p_p_id=activitiesbycode_WAR_cibernariumportlet&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_cacheability=cacheLevelPage&p_p_col_id=column-1&p_p_col_pos=1&p_p_col_count=2&_activitiesbycode_WAR_cibernariumportlet_id=838003'
 									target='_blank'
 									rel='noopener noreferrer'
 								>
-									Details
+									{t('details')}
 								</a>
 							</small>
 							<br />
 							<small>
-								Proficiency in <i>React</i>
+								{t('Proficiency in')} <i>React</i>
 								<br />
-								Creation of <i>custom Hooks</i>
+								{t('Creation of')} <i>custom Hooks</i>
 								<br />
-								Implement <i>Typescript</i> in front/back end
+								{capitalize(t('implement'))} <i>Typescript</i> - Front & Backend
 								<br />
-								Use of <i>styled components</i>
+								{t('Use of')} <i>styled components</i>
 								<br />
-								Use of Redux & <i>UseContext API</i>
+								{t('Use of')} Redux & <i>Context API</i>
 								<br />
-								<i>Responsive Design</i>
+								<i>{t('Responsive Design')}</i>
 								<br />
-								Understanding of <i>Clean code & Design patterns</i>
+								{t('Understanding of')}{' '}
+								<i>{t('Clean code & Design patterns')}</i>
 								<br />
-								Applied Unit Testing - <i>JEST</i>
+								{t('Applied')} <i>Unit Testing - JEST</i>
 								<br />
 							</small>
 						</article>
 						<article className='article-cv'>
 							<h5>
-								Full Stack MERN eCommerce Project{' '}
+								Full Stack MERN {t('eCommerce Project')}{' '}
 								<a
 									href='https://www.udemy.com/course/mern-ecommerce/'
 									target='_blank'
@@ -365,38 +369,42 @@ const Main = () => {
 									Proshop
 								</a>
 							</h5>
-							<p>March 2021 - July 2021 (5 months)</p>
+							<p>
+								{t('March 2021 - July 2021')} (5 {t('months')})
+							</p>
 							<small>
 								<a
 									href='https://www.udemy.com/course/mern-ecommerce/'
 									target='_blank'
 									rel='noopener noreferrer'
 								>
-									Details
+									{t('details')}
 								</a>
 							</small>
 							<br />
 							<small>
-								Develop a full <i>transactional e-commerce website</i>
+								{t('Develop a full')}{' '}
+								<i>{t('transactional e-commerce website')}</i>
 								<br />
-								Implement MERN stack, REDUX and <i>React-Bootstrap</i>
+								{capitalize(t('implement'))} MERN stack, REDUX &{' '}
+								<i>Bootstrap</i>
 								<br />
-								<i>Nodejs/ExpressJs</i> with <i>MongoDB/Mongoose</i> ORM
+								<i>Nodejs/ExpressJs</i> {t('with')} <i>MongoDB/Mongoose</i>
 								<br />
-								Use of <i>JWT authentication</i>
+								{t('Use of')} <i>JWT authentication</i>
 								<br />
-								Creating <i>Custom error handlers</i>
+								{t('Creating')} <i>Custom error handlers</i>
 								<br />
-								Integrating the <i>PayPal/Strive</i> APIs
+								{t('Integrating')} <i>PayPal / Strive</i> APIs
 								<br />
-								Project <i>deployment</i> to Heroku
+								<i>{capitalize(t('deployment'))}</i> {t('to')} Heroku
 								<br />
 							</small>
 						</article>
 
 						<article className='article-cv'>
 							<h5>
-								Full Stack Web Development BootCamp at{' '}
+								{t('Full Stack Web Development BootCamp')} {t('at')}{' '}
 								<a
 									href='https://www.appbrewery.co/'
 									target='_blank'
@@ -405,25 +413,27 @@ const Main = () => {
 								</a>
 							</h5>
 
-							<p>October 2020 - February 2021 (4 months)</p>
+							<p>
+								{t('October 2020 - February 2021')} (4 {t('months')})
+							</p>
 							<small>
-								Proficiency in <i>HTML / CSS / JavaScript</i>
+								{t('Proficiency in')} <i>HTML / CSS / JavaScript</i>
 								<br />
-								Understanding of <i>DOM Manipulation</i>
+								{t('Understanding of')} <i>DOM Manipulation</i>
 								<br />
-								MERN Stack with <i>REDUX</i>
+								MERN Stack {t('with')} <i>REDUX</i>
 								<br />
-								GitHub and Git for Version Control System
+								<i>GitHub & Git</i> {t('for Version Control System')}
 								<br />
-								<i>Express & Nodejs</i> Backend implementation
+								<i>Express & Nodejs</i> Backend
 								<br />
 								Creation of <i>RESTful APIs</i>
 								<br />
-								<i>SQL / NOSQL Database</i> implementation
+								<i>SQL / NOSQL Database</i>
 								<br />
-								Work with MongoDB & <i>Mongoose</i> ORM
+								{t('Work with')} MongoDB & <i>Mongoose</i> ORM
 								<br />
-								<i>Authorization/Authentication</i> workflow
+								<i>{t('Authorization/Authentication workflow')}</i> - JWT
 								<br />
 							</small>
 						</article>
@@ -432,7 +442,7 @@ const Main = () => {
 
 				<section id='skills'>
 					<h4 className='mary1'>
-						Skills{' '}
+						{t('Skills')}{' '}
 						<a href='#header'>
 							<em
 								style={{ fontSize: '12px' }}
