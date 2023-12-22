@@ -2,6 +2,8 @@
 	"full-stack-developer": "Desarrollador Web Full Stack",
 	"city": "Barcelona, España",
 	"city-2": "Buenos Aires, Argentina",
+	"city-3": "Londres, Reino Unido",
+	"city-4": "California, EEUU",
 	"linkedin": "Perfil LinkedIn",
 	"github": "Perfil GitHub",
 	"work-permit": "Permiso de trabajo UE",
@@ -78,5 +80,6 @@
 	"Full Stack Web Development BootCamp": "BootCamp de Desarrollo Web Full Stack",
 	"Skills": "Habilidades",
 	"to": "hacia",
+	"onsite": "presencial",
 	"XXXXX": ""
 }

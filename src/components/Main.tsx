@@ -326,9 +326,6 @@ const Main = () => {
 									Barcelona Activa - IT Academy
 								</a>
 							</h5>
-							<p>
-								{t('April 2023 - August 2023')} (4 {t('months')})
-							</p>
 							<small>
 								<a
 									href='https://cibernarium.barcelonactiva.cat/it-academy/inscripcio;jsessionid=75DD3AEA4E31B065F1E2C1A936EC750A?p_p_id=activitiesbycode_WAR_cibernariumportlet&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_cacheability=cacheLevelPage&p_p_col_id=column-1&p_p_col_pos=1&p_p_col_count=2&_activitiesbycode_WAR_cibernariumportlet_id=838003'
@@ -339,6 +336,12 @@ const Main = () => {
 								</a>
 							</small>
 							<br />
+							<small>
+								{t('city')} ({t('onsite')})
+							</small>
+							<p>
+								{t('April 2023 - August 2023')} (4 {t('months')})
+							</p>
 							<small>
 								{t('Proficiency in')} <i>React</i>
 								<br />
@@ -369,9 +372,6 @@ const Main = () => {
 									Proshop
 								</a>
 							</h5>
-							<p>
-								{t('March 2021 - July 2021')} (5 {t('months')})
-							</p>
 							<small>
 								<a
 									href='https://www.udemy.com/course/mern-ecommerce/'
@@ -382,6 +382,12 @@ const Main = () => {
 								</a>
 							</small>
 							<br />
+							<small>
+								{t('city-4')} ({t('remote')})
+							</small>
+							<p>
+								{t('March 2021 - July 2021')} (5 {t('months')})
+							</p>
 							<small>
 								{t('Develop a full')}{' '}
 								<i>{t('transactional e-commerce website')}</i>
@@ -412,10 +418,23 @@ const Main = () => {
 									AppBrewery
 								</a>
 							</h5>
-
+							<small>
+								<a
+									href='https://www.udemy.com/course/the-complete-web-development-bootcamp/'
+									target='_blank'
+									rel='noopener noreferrer'
+								>
+									{t('details')}
+								</a>
+							</small>
+							<br />
+							<small>
+								{t('city-3')} ({t('remote')})
+							</small>
 							<p>
 								{t('October 2020 - February 2021')} (4 {t('months')})
 							</p>
+
 							<small>
 								{t('Proficiency in')} <i>HTML / CSS / JavaScript</i>
 								<br />
