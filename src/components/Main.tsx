@@ -107,7 +107,16 @@ const Main = () => {
 					</a>
 				</h4>
 				<article className='info-cv'>
-					<p>{t('about-text')}</p>
+					<p>
+						{t('about-1')}
+						<i>Full Stack Web {t('developer')}</i>
+						{t('about-2')}
+						<i> {t('enthusiastic, self-motivated,reliable, responsible')} </i>
+						{t('about-3')}
+						<i> {t('team worker')} </i>
+						{t('about-4')}
+						{t('work under pressure')} {t('about-5')}
+					</p>
 				</article>
 			</section>
 
@@ -125,7 +134,7 @@ const Main = () => {
 					<div className='grid300'>
 						<article className='article-cv'>
 							<h5>
-								Full Stack {t('developer')} {t('at')}{' '}
+								Full Stack Web {t('developer')} {t('at')}{' '}
 								<a
 									href='https://www.urbanyhostels.com/'
 									target='_blank'
