@@ -71,7 +71,7 @@ const Main = () => {
 								className='fab fa-linkedin'
 							></em>{' '}
 							<a
-								href='https://www.linkedin.com/in/octavio-frangipani-080aa947/'
+								href='https://www.linkedin.com/in/octaviofrangipani/'
 								target='_blank'
 							>
 								{t('linkedin')}
@@ -110,13 +110,13 @@ const Main = () => {
 				<article className='info-cv'>
 					<p>
 						{t('about-1')}
-						<i>Full Stack Web {t('developer')}</i>
+						<i>{t('full-stack-developer')}</i>
 						{t('about-2')}
 						<i> {t('enthusiastic, self-motivated,reliable, responsible')} </i>
 						{t('about-3')}
 						<i> {t('team worker')} </i>
 						{t('about-4')}
-						{t('work under pressure')} {t('about-5')}
+						<i>{t('work under pressure')}</i> {t('about-5')}
 					</p>
 				</article>
 			</section>
